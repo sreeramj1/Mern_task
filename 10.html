@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TASK5</title>
+    <style>
+        #outer{
+            background-color: #dad93f;
+            display : flex;
+            width : 600px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 100px;
+        }
+        #navbar{
+            height:400px;
+            width :250px;
+            margin-right: 80px;
+            margin-top:100px;   
+        }
+        #content{
+            height:500px; 
+            color:#813953;
+            margin-top : 30px;
+            font-weight: 900;
+        }
+        .navitem{
+            left: 50px;
+            transition: 0.3s;
+            list-style-type: none;
+            padding : 10px 15px 10px 5px;
+            margin-bottom : 5px;
+            background:linear-gradient(
+                to right ,
+                white 0%,white 90%,black 10%,black 100%
+            );
+            color : blue;   
+        }
+        .navitem:hover{
+            color:#813953;
+            cursor:pointer;
+            left : 100px
+        }
+        hr{
+            border : 1px dashed #813953;
+        }
+        h2{
+            font-size: xx-large;
+            font-weight:bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = outer>
+    <div id ="navbar">
+        <ul id="verticalnavbar">
+            <li class="navitem">Home page</li>
+            <li class="navitem">Musings</li>
+            <li class="navitem">My town</li>
+            <li class="navitem">Links</li>
+        </ul>
+
+    </div>
+    <div id ="content">
+        <h2>My First Styled Page</h2>
+ 
+        <p>Welcome to my first styled page!</p>
+  
+        <p>It lacks images, but atleast it has style. And it has links even if they dont go anywhere....</p>
+     
+        <p>There should be more here, but I dont know what yet.</p>
+    
+        <hr>
+        <p>Made on 11th sep 2023</p>
+        <p>by myself</p>
+
+    </div>
+</div>
+</body>
+</html>

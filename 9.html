@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+  .container {
+    width: 300px;
+    height: 300px;
+    background-color: #f1f1f1;
+    position: relative;
+    padding: 20px;
+  }
+
+
+  .header {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+ 
+  .text {
+    margin-top: 10px;
+  }
+
+ 
+  .sidenav {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 150px;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: left 0.3s;
+  }
+
+  .sidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    text-align: right;
+    display: block;
+    transition: padding-right 0.3s;
+  }
+
+  .sidenav a:hover {
+    padding-right: 30px;
+  }
+
+
+  .container:hover .sidenav {
+    left: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">Hoverable side navigation buttons</div>
+  <div class="text">Hover over the buttons in the left side navigation to open them</div>
+  <div class="sidenav">
+    <a href="#">A</a>
+    <a href="#">B</a>
+    <a href="#">c</a>
+    <a href="#">D</a>
+  </div>
+</div>
+
+</body>
+</html>
+

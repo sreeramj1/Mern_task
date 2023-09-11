@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TASK1</title>
+</head>
+<style>
+    table{
+        width : 70%;
+        margin-left: auto;
+        margin-right:auto;
+        background-color: #98d4d3;
+        border : 2px solid black;
+        border-radius : 10px;
+        
+    }
+    td,th{
+        border:2px solid black ;
+        border-radius:10px;
+    }
+    .outer{
+        margin-right:auto;
+        margin-left:auto;
+        height :100px;
+        width : 400px;
+        margin-top :10px;
+        margin-bottom:25px;
+        display:flex;
+    }
+    .inner{
+        height:75px;
+        width :75px;
+        margin-left:25px;
+        margin-right:25px;
+        border:2px solid lightgreen;   
+    }
+    #inner1{
+        border-radius : 10px;
+    }
+    #inner3,#inner6{
+        border-radius : 20px;
+    }
+    #inner2,#inner5,#inner8{
+        border-radius : 5px;
+    }
+    #inner7{
+        border-radius : 40px;
+    }
+    #inner9{
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+</style>
+
+<body>
+    
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <div class="outer" >
+            <div  class = "inner" id="inner1"></div>
+            <div  class = "inner" id="inner2"></div>
+            <div  class = "inner" id="inner3"></div>
+        </div>
+        <div class="outer" >
+            <div  class = "inner" id="inner4"></div>
+            <div  class = "inner" id="inner5"></div>
+            <div  class = "inner" id="inner6"></div>
+        </div>
+        <div class="outer" >
+            <div  class = "inner" id="inner7"></div>
+            <div  class = "inner" id="inner8"></div>
+            <div  class = "inner" id="inner9"></div>
+        </div>
+        
+        
+   
+</body>
+
+</html>
